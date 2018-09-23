@@ -1,5 +1,6 @@
 {
   "name": "parcel-readfilesync-typescript-repro",
+  "main": "src/index.html",
   "scripts": {
     "start": "parcel ./src/index.html"
   },
