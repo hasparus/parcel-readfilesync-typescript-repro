@@ -6,23 +6,24 @@ import fsDefault from 'fs'; // TypeError: fs_1.default.readFileSync is not a fun
 import { readFileSync } from 'fs';
 
 import './index.css';
+import ErrorSpan from './ErrorSpan';
 
 declare var __dirname: string;
 
 const hello = readFileSync(__dirname + '/rawHello.tsx', 'utf-8');
 
-let fromStar;
+let fromStar: React.ReactNode;
 try {
   fromStar = fs.readFileSync(__dirname + '/rawHello.tsx', 'utf-8');
 } catch (error) {
-  fromStar = error.toString();
+  fromStar = <ErrorSpan error={error} />;
 }
 
-let fromDefault;
+let fromDefault: React.ReactNode;
 try {
   fromDefault = fsDefault.readFileSync(__dirname + '/rawHello.tsx', 'utf-8');
 } catch (error) {
-  fromDefault = error.toString();
+  fromDefault = <ErrorSpan error={error} />;
 }
 
 const App = () => (
