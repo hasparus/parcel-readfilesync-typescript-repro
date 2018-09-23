@@ -5,3 +5,4 @@ Workaround and reproduction of problem with `fs.fileReadSync` in TypeScript asse
   npm run start
 ```
 
+## [Link to reproduction](https://hasparus.github.io/parcel-readfilesync-typescript-repro/)
