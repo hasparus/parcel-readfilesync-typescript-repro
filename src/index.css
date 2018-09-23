@@ -1,0 +1,12 @@
+body {
+  background: black;
+}
+
+main {
+  color: crimson;
+  font-size: 20px;
+}
+
+main > :first-child {
+  color: lime;
+}

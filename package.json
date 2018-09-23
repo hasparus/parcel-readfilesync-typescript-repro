@@ -1,0 +1,17 @@
+{
+  "name": "parcel-readfilesync-typescript-repro",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.10.3",
+    "@types/react": "^16.4.14",
+    "parcel-bundler": "^1.9.7",
+    "sass": "^1.14.0",
+    "typescript": "^3.0.3"
+  }
+}
